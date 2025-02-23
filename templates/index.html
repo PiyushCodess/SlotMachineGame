@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+    
+<body>
+    <div class="container">
+        <h1>🎰 Slot Machine 🎰</h1>
+        <p>Balance: $<span id="balance">100</span></p>
+        <label for="bet">Bet Amount:</label>
+        <input type="number" id="bet" min="1" max="100" value="10">
+        <button id="spinButton">Spin</button>
+        <div class="slot-machine">
+            <div class="slot" id="slot1">?</div>
+            <div class="slot" id="slot2">?</div>
+            <div class="slot" id="slot3">?</div>
+        </div>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
